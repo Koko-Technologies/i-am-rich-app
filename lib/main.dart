@@ -22,7 +22,9 @@ class IamRich extends StatelessWidget {
               image: AssetImage('images/diamond.png'),
               fit: BoxFit.contain,
             ),
-            Container(color: Colors.blue, child: Text('This is the end!')),
+            Container(
+                color: Colors.blue,
+                child: Text('\"Shine Bright Like a Diamond\" ~ Rihanna')),
           ],
         ),
       ),
