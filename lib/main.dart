@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 void main() {
   runApp(IamRich());
 }
 
 class IamRich extends StatelessWidget {
-  ScrollController _scrollController;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,27 +34,12 @@ class IamRich extends StatelessWidget {
             ),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 15.0),
-              height: 100.0,
-              color: Colors.yellow,
-              width: double.infinity,
+              color: Colors.green,
               alignment: Alignment.center,
-              child: FadeAnimatedTextKit(
-                onTap: () {
-                  print("Tap Event");
-                },
-                isRepeatingAnimation: true,
-                repeatForever: true,
-                text: [
-                  'Shine bright like a diamond',
-                  'Shine bright like a diamond',
-                  'Find light in the beautiful sea, I choose to be happy',
-                  'You and I, you and I , we\'re like diamonds in the sky',
-                  'You\'re a shooting star I see, a vision of ecstasy',
-                  'When you hold me, I\'m alive',
-                  'We\'re like diamonds in the sky',
-                ],
+              child: Text(
+                'I am rich \nI deserve it.\nI am good,\nhealthy & successful.',
                 // alignment: Alignment(1.0, 0.5),
-                textStyle: TextStyle(
+                style: TextStyle(
                   fontSize: 25.0,
                 ),
               ),
